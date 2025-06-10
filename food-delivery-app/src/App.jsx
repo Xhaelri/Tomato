@@ -7,6 +7,7 @@ import Cart from './pages/Cart/Cart'
 import LoginPopup from './components/LoginPopup/LoginPopup'
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 import MyOrders from './pages/MyOrders/MyOrders'
+import StoreContextProvider from './Context/StoreContext'
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
 
   return (
     <>
+    <StoreContextProvider>
     {showLogin?<LoginPopup setShowLogin={setShowLogin}/>:<></>}
       <div className='app'>
         <Navbar setShowLogin={setShowLogin}/>
@@ -25,6 +27,7 @@ const App = () => {
         </Routes>
       </div>
       <Footer />
+      </StoreContextProvider>
     </>
   )
 }
