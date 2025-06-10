@@ -32,7 +32,7 @@ This repository hosts the source code for ZestyBite, a dynamic food ordering web
 Clone the project
 
 ```bash
-    git clone https://github.com/Mshandev/Food-Delivery
+    git clone https://github.com/Xhaelri/ZestyBite
 ```
 Go to the project directory
 
